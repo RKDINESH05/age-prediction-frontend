@@ -1,0 +1,51 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+  width: 100%;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.error-banner {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: var(--error);
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.error-icon {
+  font-size: 1.1rem;
+}
+
+.disclaimer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 20px;
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 0 14px 40px;
+  }
+}

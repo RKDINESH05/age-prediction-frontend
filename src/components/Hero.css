@@ -1,24 +1,37 @@
 .hero {
+  padding: 56px 0 40px;
   text-align: center;
-  padding: 52px 20px 36px;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 20px;
 }
 
 .hero-title {
-  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
   font-weight: 800;
   color: var(--text);
-  letter-spacing: -0.5px;
-  line-height: 1.2;
-  margin-bottom: 14px;
-}
-
-.hero-title span {
-  color: var(--primary);
+  letter-spacing: -0.6px;
+  line-height: 1.15;
+  margin-bottom: 16px;
 }
 
 .hero-sub {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--text-muted);
-  max-width: 520px;
+  max-width: 480px;
   margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 400;
 }

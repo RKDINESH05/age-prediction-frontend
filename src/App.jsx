@@ -81,7 +81,12 @@ export default function App() {
           {loading && <Loading />}
           {error && (
             <div className="error-banner">
-              <span className="error-icon">⚠</span> {error}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              {error}
             </div>
           )}
           {result && (
@@ -90,10 +95,7 @@ export default function App() {
         </section>
         <HowItWorks />
         <div className="disclaimer">
-          <p>
-            ⚠ Predictions are AI-generated estimates and may not always be
-            accurate.
-          </p>
+          <p>Predictions are AI-generated estimates and may not always be accurate.</p>
         </div>
       </main>
       <Footer />

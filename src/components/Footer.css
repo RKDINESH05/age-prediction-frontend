@@ -1,8 +1,38 @@
 .footer {
   background: var(--surface);
   border-top: 1px solid var(--border);
-  text-align: center;
-  padding: 20px;
-  font-size: 0.82rem;
+  padding: 20px 24px;
+}
+
+.footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.footer-stack {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.footer-tag {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-secondary);
 }

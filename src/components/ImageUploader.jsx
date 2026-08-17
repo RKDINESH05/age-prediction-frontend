@@ -50,11 +50,17 @@ export default function ImageUploader({
           onDragLeave={() => setDragging(false)}
           onDrop={handleDrop}
         >
-          <div className="drop-icon">📷</div>
-          <p className="drop-title">Upload a clear face image</p>
-          <p className="drop-hint">JPG, JPEG or PNG · Max 10 MB</p>
+          <div className="drop-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
+            </svg>
+          </div>
+          <p className="drop-title">Drop your image here, or browse</p>
+          <p className="drop-hint">Supports JPG, JPEG, PNG · Max 10 MB</p>
           <button
-            className="btn btn-outline"
+            className="btn btn-primary"
             onClick={(e) => { e.stopPropagation(); inputRef.current.click(); }}
           >
             Choose File
@@ -81,7 +87,7 @@ export default function ImageUploader({
       )}
 
       {validationError && (
-        <p className="validation-error">⚠ {validationError}</p>
+        <p className="validation-error">{validationError}</p>
       )}
 
       <input

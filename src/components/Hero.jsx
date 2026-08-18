@@ -1,18 +1,19 @@
 import "./Hero.css";
 
-export default function Hero() {
+export default function Hero({ onStartPrediction }) {
   return (
     <section className="hero">
       <div className="hero-eyebrow">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
-          <circle cx="12" cy="12" r="10" />
-        </svg>
-        Powered by Deep Learning
+        <span className="hero-eyebrow-dot" />
+        AI-POWERED COMPUTER VISION
       </div>
-      <h2 className="hero-title">AI Age &amp; Gender Prediction</h2>
+      <h2 className="hero-title">Predict Age with AI</h2>
       <p className="hero-sub">
-        Upload a face image and let our AI model estimate the person's age and gender instantly.
+        Estimate age from a facial image using deep learning and uncertainty-aware prediction.
       </p>
+      <button type="button" className="btn btn-primary hero-button" onClick={onStartPrediction}>
+        Start Prediction
+      </button>
     </section>
   );
 }

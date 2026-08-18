@@ -1,0 +1,150 @@
+.age-graph-card {
+  margin-top: 20px;
+  padding: 26px 22px 20px;
+}
+
+.age-graph-header h3 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.age-chart-wrap {
+  margin-top: 18px;
+  height: 120px;
+}
+
+.age-track-shell {
+  position: relative;
+  margin-top: 12px;
+}
+
+.age-track-line {
+  position: relative;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.12);
+  overflow: visible;
+}
+
+.age-track-fill {
+  position: absolute;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.3), rgba(139, 92, 246, 0.2));
+  border: 1px solid rgba(139, 92, 246, 0.22);
+}
+
+.age-predicted-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #34d399;
+  border: 3px solid #0b1220;
+  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.18);
+}
+
+.age-predicted-marker span {
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #dbeafe;
+}
+
+.age-range-labels,
+.age-range-context {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  color: #aab7cc;
+  font-size: 0.75rem;
+}
+
+.age-range-context {
+  margin-top: 8px;
+}
+
+.predicted-label {
+  color: #d1fae5;
+  font-weight: 700;
+}
+
+.simple-age-scale,
+.age-range-simple {
+  margin-top: 18px;
+}
+
+.simple-age-track {
+  position: relative;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  overflow: visible;
+}
+
+.simple-age-scale-label {
+  position: absolute;
+  top: 24px;
+  font-size: 0.72rem;
+  color: #aab7cc;
+}
+
+.simple-age-scale-label.left {
+  left: 0;
+}
+
+.simple-age-scale-label.right {
+  right: 0;
+}
+
+.simple-age-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  border: 4px solid #0f172a;
+  box-shadow: 0 0 0 5px rgba(139, 92, 246, 0.18);
+}
+
+.simple-age-marker span {
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #dbeafe;
+}
+
+.simple-age-caption {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9aa9c1;
+}
+
+.simple-age-range-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.22), rgba(139, 92, 246, 0.42));
+  border: 1px solid rgba(139, 92, 246, 0.22);
+}

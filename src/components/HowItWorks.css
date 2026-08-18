@@ -4,20 +4,20 @@
 
 .how-header {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
-.how-label {
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: var(--text-muted);
+.how-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-3);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 8px;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
 }
 
 .how-title {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.3px;
@@ -26,56 +26,60 @@
 .how-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  position: relative;
+  gap: 12px;
 }
 
 .how-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 28px 20px 24px;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
+  padding: 24px 20px;
+  position: relative;
+  transition: border-color 0.2s;
 }
 
-.how-step-num {
+.how-card:hover {
+  border-color: var(--border-2);
+}
+
+.how-step {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  background: var(--primary);
-  color: #fff;
+  width: 22px;
+  height: 22px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(99,102,241,0.25);
+  color: var(--accent-hover);
   border-radius: 50%;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 700;
   margin-bottom: 14px;
 }
 
 .how-icon-wrap {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background: var(--surface-2);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 14px;
-  color: var(--primary);
+  margin-bottom: 14px;
+  color: var(--accent);
 }
 
 .how-card-title {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .how-card-desc {
-  font-size: 0.8rem;
-  color: var(--text-muted);
+  font-size: 0.78rem;
+  color: var(--text-2);
   line-height: 1.55;
 }
 

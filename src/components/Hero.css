@@ -1,37 +1,47 @@
 .hero {
-  padding: 56px 0 40px;
   text-align: center;
+  padding: 52px 0 28px;
 }
 
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background: var(--primary-light);
-  color: var(--primary);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 5px 12px;
+  gap: 8px;
+  padding: 7px 14px;
   border-radius: 999px;
-  margin-bottom: 20px;
+  border: 1px solid rgba(129, 140, 248, 0.28);
+  background: rgba(99, 102, 241, 0.08);
+  color: #bac5ff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #8b5cf6;
 }
 
 .hero-title {
-  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+  margin-top: 24px;
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  letter-spacing: -0.06em;
+  line-height: 1.1;
   font-weight: 800;
-  color: var(--text);
-  letter-spacing: -0.6px;
-  line-height: 1.15;
-  margin-bottom: 16px;
+  color: #f8fafc;
 }
 
 .hero-sub {
+  max-width: 640px;
+  margin: 14px auto 0;
+  color: #aab7cc;
   font-size: 1rem;
-  color: var(--text-muted);
-  max-width: 480px;
-  margin: 0 auto;
   line-height: 1.7;
-  font-weight: 400;
+}
+
+.hero-button {
+  margin-top: 24px;
 }

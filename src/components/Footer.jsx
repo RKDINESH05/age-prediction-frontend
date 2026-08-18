@@ -4,13 +4,15 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <span className="footer-copy">
-          © {new Date().getFullYear()} AI Age Predictor
-        </span>
-        <div className="footer-stack">
-          <span className="footer-tag">FastAPI</span>
-          <span className="footer-tag">Google Cloud Run</span>
-          <span className="footer-tag">React</span>
+        <div>
+          <div className="footer-brand">AgeVision AI</div>
+          <div className="footer-tagline">AI-powered facial age estimation</div>
+        </div>
+        <div className="footer-meta">
+          <span>Powered by EfficientNetB4</span>
+          <span className="footer-disclaimer">
+            AI-generated estimates may vary depending on image quality, lighting, pose, and other factors.
+          </span>
         </div>
       </div>
     </footer>
